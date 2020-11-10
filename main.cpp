@@ -104,7 +104,7 @@ int main() {
                   [](std::string_view password) {
                     return password.find_first_of("0123456789") != std::string::npos;
                   },
-                  "password must be includes any digit."
+                  "password must contain a digit."
           )
           .rule( // for case
                   [](std::string_view password) {
@@ -116,7 +116,7 @@ int main() {
                     bool has_upper = std::any_of(password.begin(), password.end(), pred(std::isupper));
                     return has_lower && has_upper;
                   },
-                  "password must be includes both of lower and upper case."
+                  "password must contain both of lower and upper case."
           )
           .validate("hogehogeho"sv);
 
