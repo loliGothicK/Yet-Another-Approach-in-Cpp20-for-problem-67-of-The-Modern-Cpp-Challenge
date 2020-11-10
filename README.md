@@ -11,7 +11,9 @@ Modern C++チャレンジ読書会 vol.27
 ## ビルド環境について
 
 コンパイラはg++11（gcc-head）を利用している。
-result型のライブラリがformatを使っているが、まだライブラリが実装できていないため[{fmt}](https://github.com/fmtlib/fmt)が使われている。
+result型のライブラリがBoostライブラリを利用しているのでBoostのインストールも必要。
+result型のライブラリが[{fmt}](https://github.com/fmtlib/fmt)も使っている。
+これはBoost.FormatがC++20で削除された機能を使っているためである。
 
 このコードをコンパイルして動かしたい場合はリポジトリ内のDockerfileをビルドするとよい。
 さすれば、悠久の時がすぎたあとにビルド環境が整うであろう。
