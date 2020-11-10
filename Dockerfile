@@ -50,3 +50,7 @@ RUN apt-get install -y unzip && \
     cd ../.. && rm -rf fmt-7.1.2 && \
     apt-get -qq purge --auto-remove -y git && \
     rm -rf /var/lib/apt/lists/*
+
+ENV CC=/usr/local/bin/gcc \
+    CXX=/usr/local/bin/g++ \
+    LD_LIBRARY_PATH=/usr/local/lib64
