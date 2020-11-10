@@ -1,0 +1,3 @@
+[submodule "mitama-cpp-result"]
+	path = mitama-cpp-result
+	url = git@github.com:LoliGothick/mitama-cpp-result.git
